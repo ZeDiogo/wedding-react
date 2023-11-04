@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Outlet, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import AuthRoutes from './authorization/AuthRoutes'
 // import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
@@ -26,8 +23,6 @@ const theme = createTheme({
 });
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <ThemeProvider theme={theme}>
